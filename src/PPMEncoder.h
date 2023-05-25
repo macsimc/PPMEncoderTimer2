@@ -17,7 +17,10 @@ class PPMEncoder {
   private:
     int16_t channels[10];
     uint16_t elapsedUs;
-
+#ifdef PPM_TIMER_2	
+	uint16_t remaining;
+	int istate;
+#endif
     uint8_t numChannels;
     uint8_t currentChannel;
     byte outputPin;

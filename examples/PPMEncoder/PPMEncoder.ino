@@ -1,3 +1,4 @@
+#define PPM_TIMER_2
 #include "PPMEncoder.h"
 
 #define OUTPUT_PIN 10
